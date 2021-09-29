@@ -1,8 +1,10 @@
-package com.example.lespiedsdansleau;
+package com.example.lespiedsdansleau.IHM;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.lespiedsdansleau.R;
 
 public class MainActivity extends AppCompatActivity {
 
