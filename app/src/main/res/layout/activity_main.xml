@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <Button
+        android:id="@+id/qualiteeaubutton"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="50dp"
+        android:text="Relevés d'eau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pisciculturebutton" />
+
+    <Button
+        android:id="@+id/exploitationbutton"
+        android:layout_width="217dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:text="Créer ou modifier votre exploitation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qualiteeaubutton" />
+
+    <Button
+        android:id="@+id/pisciculturebutton"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="50dp"
+        android:text="Pisciculture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maraichagebutton" />
+
+    <Button
+        android:id="@+id/maraichagebutton"
+        android:layout_width="140dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="75dp"
+        android:text="Maraichage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
