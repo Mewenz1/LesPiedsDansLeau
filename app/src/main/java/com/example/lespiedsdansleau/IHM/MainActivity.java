@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         bQualiteEau = (Button) findViewById(R.id.qualiteeaubutton);
         bQualiteEau.setOnClickListener(qualiteeauListener);
 
+        bExploitation = (Button) findViewById(R.id.exploitationbutton);
+        bExploitation.setOnClickListener(exploitationListener);
+
     }
     private View.OnClickListener maraichageListener = new View.OnClickListener() {
         @Override
@@ -53,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this, ListeQualiteEauActivity.class);
+            startActivityForResult(intent, 0);
+        }
+    };
+
+    private View.OnClickListener exploitationListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this, EditExploitationActivity.class);
             startActivityForResult(intent, 0);
         }
     };

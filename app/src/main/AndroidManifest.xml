@@ -23,5 +23,7 @@
             tools:ignore="Instantiatable"></activity>
         <activity android:name=".IHM.ListeMaraichageActivity"
             tools:ignore="Instantiatable"></activity>
+        <activity android:name=".IHM.EditExploitationActivity"
+            tools:ignore="Instantiatable"></activity>
     </application>
 </manifest>
