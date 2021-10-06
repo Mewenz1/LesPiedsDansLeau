@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class SQLiteLesPiedsDansLeau extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "dbLesPiedsDansLeau";
     private Context context = null;
 
@@ -20,7 +20,7 @@ public class SQLiteLesPiedsDansLeau extends SQLiteOpenHelper {
         try {
             db.execSQL("DROP TABLE IF EXISTS Exploitation");
             db.execSQL("CREATE TABLE Exploitation (idEx INTEGER PRIMARY KEY AUTOINCREMENT,nomEx VARCHAR(100), descEx VARCHAR(100), typeEx VARCHAR(100))");
-            db.execSQL("INSERT INTO Exploitation VALUES (1, 'Les pieds dans leau', 'Entreprise à la séguinière', 'Pisciculture')");
+            db.execSQL("INSERT INTO Exploitation VALUES (1, ' ', ' ', ' ')");
             db.execSQL("INSERT INTO Exploitation VALUES (2, 'Officentrale', 'Ferme basée à cholet', 'Maraichage')");
         } catch (Exception e) {
             e.printStackTrace();

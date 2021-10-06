@@ -11,7 +11,10 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends AppCompatActivity {
+public class
+
+MainActivity extends AppCompatActivity {
+    private int position = 0;
 
     private Button bMaraichage;
     private Button bPisciculture;
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this, EditExploitationActivity.class);
+            intent.putExtra("position",position);
             startActivityForResult(intent, 0);
         }
     };
